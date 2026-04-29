@@ -4,11 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasha Custom Corporation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="test">
         <h1>hello</h1>
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="https://picsum.photos/500/300" alt=""></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/500/300" alt=""></div>
+                <div class="swiper-slide"><img src="https://picsum.photos/500/300" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
     </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        breakpoints: {
+            565: {
+                slides
+            }
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });</script>
+
+        
 </body>
 </html>
